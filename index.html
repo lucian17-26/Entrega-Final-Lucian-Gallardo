@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- EStilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark menu-color color-menu color2 ">
+            <div class="container-fluid ">
+                <img src="./imagenes/logo.png" alt="Logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse cursor " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">LIBROS YA!</a>
+                        </li>
+                        <li class=" nav-link posicion-boton">
+                            <input type="checkbox" id="switch" class="switch-input" />
+                            <label for="switch" class="switch"></label>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de Barra de navegacion-->
+    </header>
+    <section>
+        <div class="container">
+            <h1>Catalogo</h1>
+            <hr>
+            <div class="row" id="cards"></div>
+        </div>
+        <aside>
+            <div id="sidebar">
+                <div class="toggle-btn">
+                    <span><img src="./imagenes/carrito-de-compras (1).png" alt="" class="logo-carrito"></span>
+                </div>
+                <div class="container">
+                    <h4>Carrito de compras</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Acción</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        
+                        <tfoot>
+                            <tr id="footer">
+                                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                            </tr>
+                        </tfoot>
+                        <tbody id="items"></tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </aside>
+        
+    </section>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+        <tr>
+            <th scope="row" id="th"></th>
+            <td id="td-1">Café</td>
+            <td id="td-2">1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+
+
+    <template id="template">
+        <div class="col-12 mb-2 col-md-4 ">
+            <div class="card ">
+                <img src="" alt="" class="card-img-top" id="img" style=" height: 250px;">
+                <div class="card-body text-center div-card">
+                    <h5 id="titulo">Titulo</h5><br>
+                    <p>$<strong id="precio">Precio</strong></p><br>
+                    <button class="btn btn-primary" id="stock">Comprar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/topic.js"></script>
+    <script src="./JS/carritoLista.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

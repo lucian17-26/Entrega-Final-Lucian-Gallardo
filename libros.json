@@ -1,0 +1,100 @@
+[
+    {
+        "titulo": "1984",
+        "precio": 500,
+        "id": 1,
+        "stock": 8,
+        "thumbnailUrl": "./imagenes/1984.jpg"
+    },
+    {
+        "titulo": "El mundo esta en venta",
+        "precio": 600,
+        "id": 2,
+        "stock": 6,
+        "thumbnailUrl": "./imagenes/el-mundo-esta-en-venta.jpg"
+    },
+    {
+        "titulo": "El niño de la nieve",
+        "precio": 350,
+        "id": 3,
+        "stock": 7,
+        "thumbnailUrl": "./imagenes/el-niño-de-la-nieve.jpg"
+    },
+    {
+        "titulo": "El señor de los anillos",
+        "precio": 900,
+        "id": 4,
+        "stock": 3,
+        "thumbnailUrl": "./imagenes/el-señor-de-los-anillos-01.jpg"
+    },
+    {
+        "titulo": "El señor de los anillos 2",
+        "precio": 750,
+        "id": 5,
+        "stock": 4,
+        "thumbnailUrl": "./imagenes/el-señor-de-los-anillos-02.jpg"
+    },
+    {
+        "titulo": "El señor de los anillos 3",
+        "precio": 1000,
+        "id": 6,
+        "stock": 5,
+        "thumbnailUrl": "./imagenes/el-señor-de-los-anillos.jpg"
+    },
+    {
+        "titulo": "El ultimo pasajero",
+        "precio": 800,
+        "id": 7,
+        "stock": 3,
+        "thumbnailUrl": "./imagenes/el-ultimo-pasajero.jpg"
+    },
+    {
+        "titulo": "Hamblet",
+        "precio": 700,
+        "id": 8,
+        "stock": 6,
+        "thumbnailUrl": "./imagenes/hamlet-by-isidro-ferrer.jpg"
+    },
+    {
+        "titulo": "Harry Potter",
+        "precio": 900,
+        "id": 9,
+        "stock": 4,
+        "thumbnailUrl": "./imagenes/harry-potter-01.jpg"
+    },
+    {
+        "titulo": "Harry Potter 2",
+        "precio": 1000,
+        "id": 10,
+        "stock": 2,
+        "thumbnailUrl": "./imagenes/harry-potter-el-pricionero.jpg"
+    },
+    {
+        "titulo": "Harry Potter 3",
+        "precio": 800,
+        "id": 11,
+        "stock": 5,
+        "thumbnailUrl": "./imagenes/harry-potter.jpg"
+    },
+    {
+        "titulo": "La naranja mecanica",
+        "precio": 1200,
+        "id": 12,
+        "stock": 1,
+        "thumbnailUrl": "./imagenes/la-naranja-mecanica-anthony-burgess.jpg"
+    },
+    {
+        "titulo": "La revolucion glucosa",
+        "precio": 650,
+        "id": 13,
+        "stock": 2,
+        "thumbnailUrl": "./imagenes/la-revolucion-glucosa.jpg"
+    },
+    {
+        "titulo": "Moby Dick",
+        "precio": 1100,
+        "id": 14,
+        "stock": 2,
+        "thumbnailUrl": "./imagenes/moby-dick.jpg"
+    }
+]

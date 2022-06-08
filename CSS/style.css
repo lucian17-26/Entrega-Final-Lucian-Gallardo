@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    --color-bg: rgba(115, 180, 218, 0.582);
+    --color-texto: black;
+    --barra-lateral: white;
+    --color-cards: rgba(11, 128, 0, 0.616);
+
+}
+
+body.dark-topic {
+    --color-bg: black;
+    --color-texto: white;
+    --barra-lateral: #151719;
+    --color-cards: rgba(21, 36, 21, 0.616);
+
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        --color-bg: black;
+        --color-texto: white;
+        --barra-lateral: #151719;
+        --color-cards: rgba(21, 36, 21, 0.616);
+
+    }
+
+    body.light-topic {
+        --color-bg: rgba(115, 180, 218, 0.582);
+        --color-texto: black;
+        --barra-lateral: white;
+        --color-cards: rgba(11, 128, 0, 0.616);
+
+
+    }
+}
+
+body {
+    background-color: var(--color-bg);
+}
+header{
+    background-color: rgb(89, 153, 132);
+}
+h1{
+    color: var(--color-texto);
+}
+.div-card{
+    background-color: var(--color-cards);
+}
+
+#footer{
+    color: var(--color-texto);
+}
+tfoot, tr{
+    color: var(--color-texto);
+    text-align: center;
+}
+/* EStilo de Boton para tema Oscuro/Claro */
+:root {
+    --switch-width: 40px;
+    --switch-height: 20px;
+    --circle-size: 16px;
+    --circle-padding: 3px;
+    --circle-bg: lightgray;
+    --circle-on-bg: lightgray;
+    /* --switch-on-bg: darkgray; */
+    --switch-bg: darkgray;
+}
+
+.switch {
+    width: var(--switch-width);
+    height: var(--switch-height);
+    border-radius: 100px;
+    cursor: pointer;
+    background: var(--switch-bg);
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.switch::before {
+    content: "";
+    display: block;
+    background: var(--circle-bg);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    left: var(--circle-padding);
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-input:checked+.switch {
+    background: var(--switch-bg);
+}
+
+.switch-input:checked+.switch::before {
+    background: var(--circle-on-bg);
+    left: calc((var(--switch-width) - var(--circle-size)) - var(--circle-padding));
+}
+
+
+section {
+    display: flex;
+}
+
+
+#sidebar {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    background: var(--barra-lateral) ;
+    color: var(--color-texto);
+    left: -500px;
+    transition: all 1000ms linear;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-carrito {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 500px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    /* border: 3px solid #000; */
+}
